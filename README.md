@@ -52,3 +52,6 @@ http://127.0.0.1:5000/
 ## 成果範例
 ![alt text](docs/1.png)  
 ![alt text](docs/2.png)
+
+## 操作影片
+![alt text](docs/demo.gif) 
