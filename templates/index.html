@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Map</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+    <h1>Generate n x n Square</h1>
+
+    <!-- 操作按鈕區 -->
+    <div id="control-panel">
+        <input type="number" id="grid-size" min="5" max="9" value="{{ n }}">
+        <button onclick="initGrid(parseInt(document.getElementById('grid-size').value))">Generate Square</button>
+        <button onclick="resetGrid()">Reset Grid</button>
+        <button onclick="generatePolicyValue()">Next to HW1-2</button>
+    </div>
+
+    <!-- 障礙提示放在按鈕區下方 -->
+    <div id="obstacle-counter">Remaining Obstacles: 0 / 3</div>
+
+    <h2>HW1-1: Grid Setting</h2>
+    <table id="grid"></table>
+
+    <h2>HW1-2: Policy & Value Matrix</h2>
+    <div id="hw2-container">
+        <div>
+            <h3>Policy Matrix</h3>
+            <table id="policy-matrix"></table>
+        </div>
+        <div>
+            <h3>Value Matrix</h3>
+            <table id="value-matrix"></table>
+        </div>
+    </div>
+</body>
+</html>
