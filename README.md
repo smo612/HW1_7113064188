@@ -1,7 +1,7 @@
 # HW1: Gridworld Environment and Value Iteration  
 ## **目錄架構** 
 ```bash
-grid-map-flask-app/
+HW1_7113064188/
 ├── app.py                # Flask 主程式
 │
 ├── static/               # 靜態檔案 (CSS, JS, 圖片等)
